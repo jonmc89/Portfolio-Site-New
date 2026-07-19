@@ -63,12 +63,34 @@
 
 /* || Typography */
 
-header {
+header,
+.mobile-nav-link a,
+h1,
+.hero-link,
+.hero-text-main {
   font-family: 'Bricolage Grotesque', Arial, Helvetica, sans-serif;
 }
 
 .logo {
   font-size: 1.5rem;
+}
+
+.meta-title {
+  color: var(--blue);
+  font-size: 0.8rem;
+  font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+}
+
+.hero-text-main {
+  padding-right: 1rem;
+  color: var(--grey);
+  line-height: 160%;
 }
 
 /* || Main Styles */
@@ -77,11 +99,14 @@ body {
   background-color: var(--black);
 }
 
+/* Header */
+
 header {
   display: flex;
-  position: relative;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
+  gap: 16rem;
   padding: 1rem;
 }
 
@@ -108,11 +133,11 @@ header {
 }
 
 .mobile-nav {
-  position: absolute;
-  top: 4rem;
+  top: 0;
   left: 0;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
+  margin-block-end: 7rem;
   background-color: var(--black);
   width: 100%;
 }
@@ -138,4 +163,53 @@ header {
 
 .mobile-nav-link a:hover {
   color: var(--white);
+}
+
+/* Hero Section */
+
+.hero-section {
+  padding: 3rem 1.2rem 0 1.2rem;
+  height: 100vh;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero-call-to-action {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-link {
+  border-radius: 0.5rem;
+  padding: 0.6rem 1rem;
+  width: 10rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.view-work {
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+  border: 0.1rem solid var(--blue);
+  background-color: var(--blue);
+  color: var(--black);
+}
+
+.view-work:hover {
+  opacity: 0.7;
+}
+
+.get-in-touch {
+  transition: border 0.2s ease-in-out;
+  cursor: pointer;
+  border: 0.1rem solid rgba(164, 163, 163, 0.5);
+  color: var(--white);
+}
+
+.get-in-touch:hover {
+  border: 0.1rem solid rgba(164, 163, 163, 1);
 }
