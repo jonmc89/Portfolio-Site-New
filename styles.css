@@ -60,3 +60,82 @@
   font-family: 'JetBrains Mono';
   font-display: swap;
 }
+
+/* || Typography */
+
+header {
+  font-family: 'Bricolage Grotesque', Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+/* || Main Styles */
+
+body {
+  background-color: var(--black);
+}
+
+header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--white);
+}
+
+.logo-span {
+  color: var(--blue);
+}
+
+.fa-bars {
+  cursor: pointer;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.highlighted {
+  color: var(--blue);
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background-color: var(--black);
+  width: 100%;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2em;
+  list-style: none;
+}
+
+.mobile-nav-link a {
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+  color: var(--grey);
+  text-decoration: none;
+}
+
+.mobile-nav-link a:hover {
+  color: var(--white);
+}
