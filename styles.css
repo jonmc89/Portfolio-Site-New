@@ -11,6 +11,7 @@
   --blue: #00d4ff;
   --white: #fff;
   --grey: #a4a3a3;
+  --dark-grey: #202020;
 }
 
 @font-face {
@@ -67,7 +68,9 @@ header,
 .mobile-nav-link a,
 h1,
 .hero-link,
-.hero-text-main {
+.text-main,
+.section-header,
+.stats-detail {
   font-family: 'Bricolage Grotesque', Arial, Helvetica, sans-serif;
 }
 
@@ -75,11 +78,24 @@ h1,
   font-size: 1.5rem;
 }
 
-.meta-title {
-  color: var(--blue);
+.meta-title,
+.stats-header {
   font-size: 0.8rem;
   font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
   letter-spacing: 0.2rem;
+}
+
+.meta-title {
+  color: var(--blue);
+}
+
+.stats-header {
+  color: var(--grey);
+}
+
+.stats-detail {
+  color: var(--white);
+  font-size: 1.2rem;
 }
 
 h1 {
@@ -87,13 +103,21 @@ h1 {
   font-size: 2.5rem;
 }
 
-.hero-text-main {
+.text-main {
   padding-right: 1rem;
   color: var(--grey);
   line-height: 160%;
 }
 
+.section-header {
+  color: var(--white);
+}
+
 /* || Main Styles */
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: var(--black);
@@ -107,6 +131,7 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 16rem;
+  background-color: var(--black);
   padding: 1rem;
 }
 
@@ -133,9 +158,11 @@ header {
 }
 
 .mobile-nav {
-  top: 0;
+  position: fixed;
+  top: 3.8rem;
   left: 0;
   opacity: 0;
+  z-index: 99;
   transition: opacity 0.2s ease-in-out;
   margin-block-end: 7rem;
   background-color: var(--black);
@@ -168,7 +195,11 @@ header {
 /* Hero Section */
 
 .hero-section {
-  padding: 3rem 1.2rem 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem 1.2rem 0 1.2rem;
+  padding-top: 8rem;
   height: 100vh;
 }
 
@@ -212,4 +243,22 @@ header {
 
 .get-in-touch:hover {
   border: 0.1rem solid rgba(164, 163, 163, 1);
+}
+
+/* About Section */
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem 1.2rem 0 1.2rem;
+  height: 100vh;
+}
+
+.about-stats-container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--dark-grey);
+  padding: 1rem;
 }
