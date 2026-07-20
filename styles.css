@@ -194,7 +194,7 @@ header {
 
 .mobile-nav {
   position: fixed;
-  top: 3.8rem;
+  top: 3.6rem;
   left: 0;
   opacity: 0;
   z-index: 99;
@@ -232,9 +232,8 @@ header {
 .hero-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 8rem 1.2rem 0 1.2rem;
-  padding-top: 8rem;
+  justify-content: flex-end;
+  padding: 0 1.2rem 1.2rem 1.2rem;
   height: 100vh;
 }
 
@@ -309,6 +308,12 @@ header {
 }
 
 .projects-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
