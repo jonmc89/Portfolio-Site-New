@@ -12,6 +12,7 @@
   --white: #fff;
   --grey: #a4a3a3;
   --dark-grey: #202020;
+  --darker-grey: #151515;
 }
 
 @font-face {
@@ -70,7 +71,10 @@ h1,
 .hero-link,
 .text-main,
 .section-header,
-.stats-detail {
+.stats-detail,
+.project-item-link,
+.project-header,
+.project-details {
   font-family: 'Bricolage Grotesque', Arial, Helvetica, sans-serif;
 }
 
@@ -79,7 +83,10 @@ h1,
 }
 
 .meta-title,
-.stats-header {
+.stats-header,
+.all-projects-link,
+.index-year,
+.tech-item {
   font-size: 0.8rem;
   font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
   letter-spacing: 0.2rem;
@@ -89,17 +96,45 @@ h1,
   color: var(--blue);
 }
 
-.stats-header {
+.stats-header,
+.all-projects-link,
+.index-year,
+.project-item-link,
+.project-details,
+.tech-item {
   color: var(--grey);
 }
 
-.stats-detail {
+.project-details {
+  line-height: 160%;
+}
+
+.all-projects-link,
+.project-item-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.project-item-link {
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+}
+
+h1,
+.stats-detail,
+.project-header {
   color: var(--white);
+}
+
+.project-header {
+  font-size: 1.5rem;
+}
+
+.stats-detail {
   font-size: 1.2rem;
 }
 
 h1 {
-  color: var(--white);
   font-size: 2.5rem;
 }
 
@@ -259,6 +294,49 @@ header {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(2, 1fr);
-  background-color: var(--dark-grey);
+  background-color: var(--darker-grey);
   padding: 1rem;
+}
+
+/* Project Section */
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 5rem 1.2rem 0 1.2rem;
+  height: 100vh;
+}
+
+.projects-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border-radius: 1rem;
+  background-color: var(--darker-grey);
+  padding: 1rem;
+}
+
+.index-year {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tech-stack-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.tech-item {
+  border: 0.1rem solid var(--grey);
+  border-radius: 0.5rem;
+  background-color: var(--dark-grey);
+  padding: 0.5rem;
+  text-align: center;
 }
