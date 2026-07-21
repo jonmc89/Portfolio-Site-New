@@ -17,7 +17,7 @@
         <li class="mobile-nav-link"><a href="#about">About</a></li>
         <li class="mobile-nav-link"><a href="#projects">Projects</a></li>
         <li class="mobile-nav-link"><a href="#skills">Skills</a></li>
-        <li class="mobile-nav-link"><a href="#">Contact</a></li>
+        <li class="mobile-nav-link"><a href="#contact">Contact</a></li>
       </ul>
     </div>
     <header>
@@ -46,7 +46,7 @@
           </p>
           <div class="hero-call-to-action">
             <a class="hero-link view-work" href="#projects">View work</a>
-            <a class="hero-link get-in-touch" href="#">Get in touch</a>
+            <a class="hero-link get-in-touch" href="#form">Get in touch</a>
           </div>
         </div>
       </section>
@@ -193,8 +193,45 @@
           </ul>
         </div>
       </section>
-      <section class="contact-section"></section>
+      <section id="contact" class="contact-section">
+        <p class="meta-title">04 - CONTACT</p>
+        <h2 class="section-header">Lets work together.</h2>
+        <p class="text-main">
+          Currently open to freelance projects. If you have something
+          interesting, I'd love to hear about it.
+        </p>
+        <div class="contact-details-container">
+          <div class="contact-item">
+            <h3 class="meta-title contact-header">EMAIL</h3>
+            <p class="contact-details">jonmckenziewebdev@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <h3 class="meta-title contact-header">GITHUB</h3>
+            <p class="contact-details">github.com/jonmc89</p>
+          </div>
+        </div>
+        <form id="form" novalidate>
+          <label class="meta-title contact-header" for="name" name="name"
+            >NAME</label
+          >
+          <input id="name" type="text" />
+          <label class="meta-title contact-header" for="email" name="email"
+            >EMAIL</label
+          >
+          <input id="name" type="email" />
+          <label class="meta-title contact-header" for="message" name="message"
+            >EMAIL</label
+          >
+          <textarea name="message" id="message" rows="8"></textarea>
+          <input class="form-submit" type="submit" value="Send message" />
+        </form>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p class="footer-text meta-title">
+        &copy; 2026 Jon McKenzie. All rights reserved.
+      </p>
+      <p class="footer-text meta-title">Designed & built by hand.</p>
+    </footer>
   </body>
 </html>
