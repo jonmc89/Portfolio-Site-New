@@ -143,6 +143,7 @@ h1,
 }
 
 h1 {
+  width: 100%;
   font-size: 2.5rem;
 }
 
@@ -159,6 +160,26 @@ h1 {
 .footer-text {
   opacity: 0.4;
   color: var(--grey);
+}
+
+.email-link {
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  color: var(--blue);
+}
+
+.github-link {
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  color: var(--blue);
 }
 
 /* || Main Styles */
@@ -209,16 +230,25 @@ header {
   position: fixed;
   top: 3.6rem;
   left: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
   opacity: 0;
   z-index: 99;
-  transition: opacity 0.2s ease-in-out;
+  transition:
+    opacity 0.25s ease-in-out,
+    translate 0.25s ease-in-out,
+    visbility 0.25s ease-in-out;
   margin-block-end: 7rem;
   background-color: var(--black);
   width: 100%;
+  pointer-events: none;
 }
 
 .visible {
+  transform: translateY(0);
+  visibility: visible;
   opacity: 1;
+  pointer-events: auto;
 }
 
 .mobile-nav ul {
@@ -425,10 +455,10 @@ textarea {
 
 .form-submit {
   transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
   border-color: var(--blue);
   background-color: var(--blue);
   color: var(--black);
-  cursor: pointer;
 }
 
 .form-submit:hover {
