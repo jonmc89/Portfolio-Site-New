@@ -296,6 +296,7 @@ header {
   position: relative;
   margin-block-end: 1rem;
   background-image: url(./images/hero-image.jpg);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
