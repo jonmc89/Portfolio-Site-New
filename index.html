@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/d4691f768e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="./script.js" defer></script>
     <title>JMWebDev</title>
   </head>
@@ -247,18 +248,12 @@
           </div>
         </div>
         <form id="form" novalidate>
-          <label class="meta-title contact-header" for="name" name="name"
-            >NAME</label
-          >
-          <input id="name" type="text" />
-          <label class="meta-title contact-header" for="email" name="email"
-            >EMAIL</label
-          >
-          <input id="name" type="email" />
-          <label class="meta-title contact-header" for="message" name="message"
-            >EMAIL</label
-          >
-          <textarea name="message" id="message" rows="8"></textarea>
+          <label class="meta-title contact-header" for="name">NAME</label>
+          <input id="name" type="text" name="name" required />
+          <label class="meta-title contact-header" for="email">EMAIL</label>
+          <input id="email" type="email" name="email" required />
+          <label class="meta-title contact-header" for="message">MESSAGE</label>
+          <textarea name="message" id="message" rows="8" required></textarea>
           <input class="form-submit" type="submit" value="Send message" />
         </form>
       </section>
