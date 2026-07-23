@@ -1,3 +1,5 @@
+// Mobile Menu
+
 const menuBtn = document.getElementById('menuBtn');
 const mobileNav = document.getElementById('mobileNav');
 
