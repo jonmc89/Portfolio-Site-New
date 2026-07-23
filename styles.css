@@ -283,6 +283,7 @@ header {
 
 .hero-img-container {
   position: relative;
+  margin-block-end: 1rem;
   background-image: url(./images/hero-image.jpg);
   background-size: cover;
   width: 100%;
@@ -338,7 +339,7 @@ header {
   flex-direction: column;
   gap: 2rem;
   padding: 5rem 1.2rem 0 1.2rem;
-  height: 80vh;
+  height: 100%;
 }
 
 .about-stats-container {
@@ -404,7 +405,7 @@ header {
   flex-direction: column;
   gap: 1rem;
   padding: 5rem 1.2rem 0 1.2rem;
-  height: 100vh;
+  height: 100%;
 }
 
 .skills-list {
