@@ -76,8 +76,19 @@ h1,
 .project-header,
 .project-details,
 .skill-item,
-.contact-details {
+.contact-details,
+.header-link {
   font-family: 'Bricolage Grotesque', Arial, Helvetica, sans-serif;
+}
+
+.header-nav ul li a {
+  transition: color 0.2s ease-in-out;
+  color: var(--grey);
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: var(--white);
 }
 
 .logo {
@@ -113,6 +124,10 @@ h1,
   color: var(--grey);
 }
 
+.about-header {
+  font-size: clamp(1rem, 5vw, 2.5rem);
+}
+
 .project-details {
   line-height: 160%;
 }
@@ -144,7 +159,7 @@ h1,
 
 h1 {
   width: 100%;
-  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 5vw, 3rem);
 }
 
 .text-main {
@@ -217,6 +232,12 @@ header {
   width: 100%;
 }
 
+.header-nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
 .logo-link {
   text-decoration: none;
 }
@@ -283,6 +304,24 @@ header {
   color: var(--white);
 }
 
+.header-nav {
+  display: none;
+}
+
+.hire-me-link {
+  display: none;
+  transition: opacity 0.2s ease-in-out;
+  border-radius: 0.5rem;
+  background-color: var(--blue);
+  padding: 0.5rem 1rem;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.hire-me-link:hover {
+  opacity: 0.7;
+}
+
 /* Hero Section */
 
 .hero-section {
@@ -306,7 +345,7 @@ header {
 .hero-text-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: clamp(2rem, 5vh, 3rem);
   padding: 0 1.2rem 2.5rem 1.2rem;
 }
 
@@ -370,7 +409,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 5rem 1.2rem 0 1.2rem;
+  padding: 0 1.2rem;
   height: 100%;
 }
 
@@ -430,8 +469,13 @@ header {
 }
 
 .skill-item {
-  border-bottom: 0.1rem solid var(--grey);
   padding: 1rem;
+}
+
+.skills-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 /* Contact Section */
@@ -450,6 +494,18 @@ header {
   flex-direction: column;
   gap: 1rem;
   margin-block-end: 1.5rem;
+}
+
+.contact-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .contact-item {
@@ -502,4 +558,133 @@ footer {
   border-top: 0.1rem solid var(--dark-grey);
   padding: 1.2rem;
   height: 10vh;
+}
+
+@media screen and (min-width: 51.25rem) {
+  #menuBtn {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+  }
+
+  .hire-me-link {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 85rem) {
+  header {
+    padding: 2.5rem 10rem;
+  }
+  .project-section,
+  .skills-section,
+  .contact-section,
+  .hero-section {
+    padding: 8rem 10rem 0 10rem;
+  }
+  .hero-section {
+    display: grid;
+    position: relative;
+    grid-template-rows: 1fr;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .hero-text-container {
+    grid-row: 1;
+  }
+
+  .hero-img-container {
+    grid-column: 2;
+    width: 100%;
+  }
+
+  .about-section {
+    display: flex;
+    justify-content: center;
+    padding: 0 10rem;
+  }
+
+  .about-grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    height: auto;
+  }
+
+  .about-text-one,
+  .about-text-two,
+  .about-stats-container {
+    grid-column: 2;
+  }
+
+  .about-meta {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .about-header {
+    grid-row: 2;
+    grid-column: 1;
+    width: 70%;
+  }
+
+  .about-text-one {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .about-text-two {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .about-stats-container {
+    grid-row: 3;
+    grid-column: 2;
+    width: 100%;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills-grid-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skills-container {
+    width: 80%;
+  }
+
+  .contact-grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .contact-details-container {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .contact-text-container {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  form {
+    grid-row: 1 / 3;
+    grid-column: 2;
+  }
 }

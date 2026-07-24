@@ -30,6 +30,23 @@
         </p></a
       >
       <i id="menuBtn" class="fa-solid fa-bars"></i>
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a class="header-link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header-link" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="header-link" href="#skills">Skills</a>
+          </li>
+          <li>
+            <a class="header-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="hire-me-link" href="#contact">Hire me</a>
     </header>
     <main>
       <section class="hero-section section-fade">
@@ -55,32 +72,36 @@
         </div>
       </section>
       <section id="about" class="about-section section-fade">
-        <p class="meta-title">01 - ABOUT</p>
-        <h2 class="section-header">Building things that matter.</h2>
-        <p class="text-main">
-          I'm an aspiring front-end developer with a passion for building clean,
-          responsive, and accessible websites. I enjoy turning ideas into
-          polished digital experiences while continuously expanding my skills
-          through hands-on projects and modern web technologies.
-        </p>
-        <p class="text-main">
-          Every project is an opportunity to improve my craft. Whether it's
-          creating intuitive user interfaces, writing maintainable code, or
-          learning a new framework, I'm always looking for ways to become a
-          better developer.
-        </p>
-        <div class="about-stats-container">
-          <div class="stats-item">
-            <h3 class="stats-header">EXPERIENCE</h3>
-            <p class="stats-detail">1+</p>
-          </div>
-          <div class="stats-item">
-            <h3 class="stats-header">LOCATION</h3>
-            <p class="stats-detail">Remote / Worldwide</p>
-          </div>
-          <div class="stats-item">
-            <h3 class="stats-header">PROJECTS <br />SHIPPED</h3>
-            <p class="stats-detail">5+</p>
+        <div class="about-grid-container">
+          <p class="meta-title about-meta">01 - ABOUT</p>
+          <h2 class="section-header about-header">
+            Building things that matter.
+          </h2>
+          <p class="text-main about-text-one">
+            I'm an aspiring front-end developer with a passion for building
+            clean, responsive, and accessible websites. I enjoy turning ideas
+            into polished digital experiences while continuously expanding my
+            skills through hands-on projects and modern web technologies.
+          </p>
+          <p class="text-main about-text-two">
+            Every project is an opportunity to improve my craft. Whether it's
+            creating intuitive user interfaces, writing maintainable code, or
+            learning a new framework, I'm always looking for ways to become a
+            better developer.
+          </p>
+          <div class="about-stats-container">
+            <div class="stats-item">
+              <h3 class="stats-header">EXPERIENCE</h3>
+              <p class="stats-detail">1+</p>
+            </div>
+            <div class="stats-item">
+              <h3 class="stats-header">LOCATION</h3>
+              <p class="stats-detail">Remote / Worldwide</p>
+            </div>
+            <div class="stats-item">
+              <h3 class="stats-header">PROJECTS <br />SHIPPED</h3>
+              <p class="stats-detail">5+</p>
+            </div>
           </div>
         </div>
       </section>
@@ -191,71 +212,79 @@
       <section id="skills" class="skills-section section-fade">
         <p class="meta-title">03 - SKILLS</p>
         <h2 class="section-header">Tools & technologies.</h2>
-        <div class="skills-container project-item">
-          <p class="meta-title">FRONTEND</p>
-          <ul class="skills-list">
-            <li class="skill-item">HTML</li>
-            <li class="skill-item">CSS</li>
-            <li class="skill-item">JavaScript (ES6+)</li>
-            <li class="skill-item">Accessibility (WCAG basics)</li>
-          </ul>
-        </div>
-        <div class="skills-container project-item">
-          <p class="meta-title">TOOLS</p>
-          <ul class="skills-list">
-            <li class="skill-item">Git</li>
-            <li class="skill-item">GitHub</li>
-            <li class="skill-item">VS Code</li>
-            <li class="skill-item">Figma (developer handoff)</li>
-            <li class="skill-item">Chrome DevTools</li>
-          </ul>
-        </div>
-        <div class="skills-container project-item">
-          <p class="meta-title">CURRENT LEARNING</p>
-          <ul class="skills-list">
-            <li class="skill-item">React</li>
-            <li class="skill-item">TypeScript</li>
-            <li class="skill-item">Sass</li>
-            <li class="skill-item">Vite</li>
-            <li class="skill-item">Node.js</li>
-          </ul>
+        <div class="skills-grid-container">
+          <div class="skills-container project-item">
+            <p class="meta-title skills-header-frontend">FRONTEND</p>
+            <ul class="skills-list">
+              <li class="skill-item">HTML</li>
+              <li class="skill-item">CSS</li>
+              <li class="skill-item">JavaScript (ES6+)</li>
+              <li class="skill-item">Accessibility (WCAG basics)</li>
+            </ul>
+          </div>
+          <div class="skills-container project-item">
+            <p class="meta-title skills-header-tools">TOOLS</p>
+            <ul class="skills-list">
+              <li class="skill-item">Git</li>
+              <li class="skill-item">GitHub</li>
+              <li class="skill-item">VS Code</li>
+              <li class="skill-item">Figma (developer handoff)</li>
+              <li class="skill-item">Chrome DevTools</li>
+            </ul>
+          </div>
+          <div class="skills-container project-item">
+            <p class="meta-title skills-header-learning">CURRENT LEARNING</p>
+            <ul class="skills-list">
+              <li class="skill-item">React</li>
+              <li class="skill-item">TypeScript</li>
+              <li class="skill-item">Sass</li>
+              <li class="skill-item">Vite</li>
+              <li class="skill-item">Node.js</li>
+            </ul>
+          </div>
         </div>
       </section>
       <section id="contact" class="contact-section section-fade">
-        <p class="meta-title">04 - CONTACT</p>
-        <h2 class="section-header">Lets work together.</h2>
-        <p class="text-main">
-          Currently open to freelance projects. If you have something
-          interesting, I'd love to hear about it.
-        </p>
-        <div class="contact-details-container">
-          <div class="contact-item">
-            <h3 class="meta-title contact-header">EMAIL</h3>
-            <a
-              class="contact-details email-link"
-              href="mailto:jonmckenziewebdev@gmail.com"
-              >jonmckenziewebdev@gmail.com</a
-            >
+        <p class="meta-title contact-meta">04 - CONTACT</p>
+        <div class="contact-grid-container">
+          <div class="contact-text-container">
+            <h2 class="section-header contact-header">Lets work together.</h2>
+            <p class="text-main">
+              Currently open to freelance projects. If you have something
+              interesting, I'd love to hear about it.
+            </p>
           </div>
-          <div class="contact-item">
-            <h3 class="meta-title contact-header">GITHUB</h3>
-            <a
-              href="https://github.com/jonmc89"
-              class="contact-details github-link"
-              target="_blank"
-              >github.com/jonmc89</a
-            >
+          <div class="contact-details-container">
+            <div class="contact-item">
+              <h3 class="meta-title contact-header">EMAIL</h3>
+              <a
+                class="contact-details email-link"
+                href="mailto:jonmckenziewebdev@gmail.com"
+                >jonmckenziewebdev@gmail.com</a
+              >
+            </div>
+            <div class="contact-item">
+              <h3 class="meta-title contact-header">GITHUB</h3>
+              <a
+                href="https://github.com/jonmc89"
+                class="contact-details github-link"
+                target="_blank"
+                >github.com/jonmc89</a
+              >
+            </div>
           </div>
+          <form id="form" novalidate>
+            <label class="meta-title contact-header" for="name">NAME</label>
+            <input id="name" type="text" name="name" required />
+            <label class="meta-title contact-header" for="email">EMAIL</label>
+            <input id="email" type="email" name="email" required />
+            <label class="meta-title contact-header" for="message"
+              >MESSAGE</label
+            >
+            <textarea name="message" id="message" rows="8" required></textarea>
+            <input class="form-submit" type="submit" value="Send message" />
+          </form>
         </div>
-        <form id="form" novalidate>
-          <label class="meta-title contact-header" for="name">NAME</label>
-          <input id="name" type="text" name="name" required />
-          <label class="meta-title contact-header" for="email">EMAIL</label>
-          <input id="email" type="email" name="email" required />
-          <label class="meta-title contact-header" for="message">MESSAGE</label>
-          <textarea name="message" id="message" rows="8" required></textarea>
-          <input class="form-submit" type="submit" value="Send message" />
-        </form>
       </section>
     </main>
     <footer>
