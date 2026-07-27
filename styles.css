@@ -704,5 +704,26 @@ footer {
   footer {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
+}
+.social-link {
+  transition: color 0.2s ease-in-out;
+  color: var(--white);
+}
+
+.fa-github,
+.fa-linkedin {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.social-link:hover {
+  color: var(--blue);
+}
+
+.socials-container {
+  display: flex;
+  gap: 1rem;
 }
