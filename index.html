@@ -47,13 +47,13 @@
     />
     <link rel="icon" href="./images/logo.svg" type="image/svg+xml" />
     <link rel="canonical" href="https://jonmckenziewebdev.co.uk/" />
-    <link rel="stylesheet" href="styles.min.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/d4691f768e.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="./script.min.js" defer></script>
+    <script src="./script.js" defer></script>
     <title>JM | WebDev</title>
   </head>
   <body>
@@ -75,20 +75,11 @@
       >
       <i id="menuBtn" class="fa-solid fa-bars"></i>
       <nav class="header-nav">
-        <ul>
-          <li>
-            <a class="header-link" href="#about">About</a>
-          </li>
-          <li>
-            <a class="header-link" href="#projects">Projects</a>
-          </li>
-          <li>
-            <a class="header-link" href="#skills">Skills</a>
-          </li>
-          <li>
-            <a class="header-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+        <a class="header-link active" href="#about">About</a>
+        <a class="header-link" href="#projects">Projects</a>
+        <a class="header-link" href="#skills">Skills</a>
+        <a class="header-link" href="#contact">Contact</a>
+        <div id="indicator" class="indicator"></div>
       </nav>
       <a class="hire-me-link" href="#contact">Hire me</a>
     </header>

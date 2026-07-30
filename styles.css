@@ -81,10 +81,14 @@ h1,
   font-family: 'Bricolage Grotesque', Arial, Helvetica, sans-serif;
 }
 
-.header-nav ul li a {
+.header-link {
   transition: color 0.2s ease-in-out;
   color: var(--grey);
   text-decoration: none;
+}
+
+.header-link.active {
+  color: var(--white);
 }
 
 .header-link:hover {
@@ -241,10 +245,20 @@ header {
   width: min(100% - 2rem, 1440px);
 }
 
-.header-nav ul {
+.header-nav {
   display: flex;
+  position: relative;
   gap: 1.5rem;
   list-style: none;
+}
+
+.indicator {
+  position: absolute;
+  bottom: -1rem;
+  z-index: 99;
+  transition: all 0.3s ease;
+  background: var(--blue);
+  height: 0.1875rem;
 }
 
 .logo-link {
