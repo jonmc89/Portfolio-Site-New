@@ -59,14 +59,11 @@
   <body>
     <div id="mobileNav" class="mobile-nav">
       <ul>
-        <li class="mobile-nav-link"><a href="#about">About</a></li>
-        <li class="mobile-nav-link"><a href="#projects">Projects</a></li>
-        <li class="mobile-nav-link"><a href="#skills">Skills</a></li>
-        <li class="mobile-nav-link"><a href="#contact">Contact</a></li>
+        <li class="mobile-nav-link"><a href="./index.html">Home</a></li>
       </ul>
     </div>
     <header>
-      <a class="logo-link" href="#"
+      <a class="logo-link" href="index.html"
         ><p class="logo">
           JM<span class="logo-span">Web</span>Dev<span class="logo-span"
             >.</span
@@ -75,85 +72,26 @@
       >
       <i id="menuBtn" class="fa-solid fa-bars"></i>
       <nav class="header-nav">
-        <a class="header-link active" href="#about">About</a>
-        <a class="header-link" href="#projects">Projects</a>
-        <a class="header-link" href="#skills">Skills</a>
-        <a class="header-link" href="#contact">Contact</a>
+        <a class="header-link active" href="./index.html">Home</a>
         <div id="indicator" class="indicator"></div>
       </nav>
-      <a class="hire-me-link" href="#contact">Hire me</a>
     </header>
     <main>
-      <section class="hero-section section-fade">
-        <div class="hero-img-container"></div>
-        <div class="hero-text-container">
-          <p class="meta-title">AVAILABLE FOR WORK - 2026</p>
-          <h1 class="typewriter">
-            Jon McKenzie <span class="logo-span">- <br /></span>
-            <span class="logo-span">Frontend</span> <br />Developer
-            <span class="logo-span">.</span>
-          </h1>
-          <p class="text-main">
-            I'm an aspiring front-end developer with a genuine passion for web
-            development. I'm constantly learning, refining my skills, and
-            building real-world projects that help me grow. This portfolio
-            showcases my work and my journey toward becoming a professional
-            developer.
-          </p>
-          <div class="hero-call-to-action">
-            <a class="hero-link view-work" href="#projects">View work</a>
-            <a class="hero-link get-in-touch" href="#form">Get in touch</a>
-          </div>
-        </div>
-      </section>
-      <section id="about" class="about-section section-fade">
-        <div class="about-grid-container">
-          <div class="about-header-container">
-            <p class="meta-title about-meta">01 - ABOUT</p>
-            <h2 class="section-header about-header">
-              Building things that matter.
-            </h2>
-          </div>
-          <p class="text-main about-text-one">
-            I'm an aspiring front-end developer with a passion for building
-            clean, responsive, and accessible websites. I enjoy turning ideas
-            into polished digital experiences while continuously expanding my
-            skills through hands-on projects and modern web technologies.
-          </p>
-          <p class="text-main about-text-two">
-            Every project is an opportunity to improve my craft. Whether it's
-            creating intuitive user interfaces, writing maintainable code, or
-            learning a new framework, I'm always looking for ways to become a
-            better developer.
-          </p>
-          <div class="about-stats-container">
-            <div class="stats-item">
-              <h3 class="stats-header">EXPERIENCE</h3>
-              <p class="stats-detail">1+</p>
-            </div>
-            <div class="stats-item">
-              <h3 class="stats-header">LOCATION</h3>
-              <p class="stats-detail">Remote / Worldwide</p>
-            </div>
-            <div class="stats-item">
-              <h3 class="stats-header">PROJECTS <br />SHIPPED</h3>
-              <p class="stats-detail">1</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="projects" class="project-section section-fade">
+      <section
+        id="projects"
+        class="project-section section-fade project-section-page"
+      >
         <div class="projects-text-container">
-          <p class="meta-title">02 - PROJECTS</p>
-          <h2 class="section-header">Selected work.</h2>
-          <a class="all-projects-link" href="./projects.html">ALL PROJECTS →</a>
+          <p class="meta-title">PROJECTS</p>
+          <h2 class="section-header">Real World Projects</h2>
         </div>
-        <div class="project-container">
-          <div class="project-item">
+        <div class="project-container project-grid-page-real">
+          <div class="project-item section-fade">
             <div class="index-year">
               <p class="index">01</p>
               <p class="year">2026</p>
             </div>
+            <div class="project-screenshot ec-solutions"></div>
             <h4 class="project-header">EC Solutions</h4>
             <p class="project-details">
               Professional clean webpage for a local Home Repairs company. Went
@@ -172,11 +110,42 @@
               >View project →</a
             >
           </div>
-          <div class="project-item">
+        </div>
+      </section>
+      <section id="projects" class="project-section section-fade">
+        <div class="projects-text-container">
+          <p class="meta-title"></p>
+          <h2 class="section-header">Front-End Mentor Challenges</h2>
+        </div>
+        <div class="project-container project-grid-page-frontend">
+          <div class="project-item section-fade">
+            <div class="index-year">
+              <p class="index">01</p>
+              <p class="year">2026</p>
+            </div>
+            <div class="project-screenshot design-profile"></div>
+
+            <h4 class="project-header">Single Page Design Portfolio</h4>
+            <p class="project-details">Front-End Mentor challenge</p>
+            <div class="tech-stack-container">
+              <div id="html" class="tech-item html">HTML</div>
+              <div class="tech-item css">CSS</div>
+              <div class="tech-item js">JavaScript</div>
+            </div>
+            <a
+              class="project-item-link"
+              href="https://jonmc89.github.io/single-page-design-portfolio/"
+              target="_blank"
+              rel="noopener"
+              >View project →</a
+            >
+          </div>
+          <div class="project-item section-fade">
             <div class="index-year">
               <p class="index">02</p>
               <p class="year">2026</p>
             </div>
+            <div class="project-screenshot hotel-booking"></div>
             <h4 class="project-header">Hotel Booking Confirmation Page</h4>
             <p class="project-details">
               Fun hotel booking confirmation page, completed challenge set by
@@ -195,11 +164,12 @@
               >View project →</a
             >
           </div>
-          <div class="project-item">
+          <div class="project-item section-fade">
             <div class="index-year">
               <p class="index">03</p>
               <p class="year">2026</p>
             </div>
+            <div class="project-screenshot scoot-homepage"></div>
             <h4 class="project-header">Scoot Multi-page Website</h4>
             <p class="project-details">
               Full multi-page website for a front end mentor challenge
@@ -217,11 +187,12 @@
               >View project →</a
             >
           </div>
-          <div class="project-item">
+          <div class="project-item section-fade">
             <div class="index-year">
               <p class="index">04</p>
               <p class="year">2026</p>
             </div>
+            <div class="project-screenshot meet-homepage"></div>
             <h4 class="project-header">Meet Single Web Page</h4>
             <p class="project-details">
               Clean looking web page for a collaborative chat software.
@@ -241,11 +212,12 @@
               >View project →</a
             >
           </div>
-          <div class="project-item">
+          <div class="project-item section-fade">
             <div class="index-year">
               <p class="index">05</p>
               <p class="year">2026</p>
             </div>
+            <div class="project-screenshot sign-up-homepage"></div>
             <h4 class="project-header">Sign-up Newsletter</h4>
             <p class="project-details">
               Simple news letter sign-up form, with client side form validation.
@@ -265,83 +237,27 @@
               >View project →</a
             >
           </div>
-        </div>
-      </section>
-      <section id="skills" class="skills-section section-fade">
-        <p class="meta-title">03 - SKILLS</p>
-        <h2 class="section-header">Tools & technologies.</h2>
-        <div class="skills-grid-container">
-          <div class="skills-container project-item">
-            <p class="meta-title skills-header-frontend">FRONTEND</p>
-            <ul class="skills-list">
-              <li class="skill-item">HTML</li>
-              <li class="skill-item">CSS</li>
-              <li class="skill-item">Accessibility (WCAG basics)</li>
-            </ul>
-          </div>
-          <div class="skills-container project-item">
-            <p class="meta-title skills-header-tools">TOOLS</p>
-            <ul class="skills-list">
-              <li class="skill-item">GitHub</li>
-              <li class="skill-item">VS Code</li>
-              <li class="skill-item">Figma (developer handoff)</li>
-              <li class="skill-item">Chrome DevTools</li>
-            </ul>
-          </div>
-          <div class="skills-container project-item">
-            <p class="meta-title skills-header-learning">CURRENT LEARNING</p>
-            <ul class="skills-list">
-              <li class="skill-item">Git</li>
-              <li class="skill-item">JavaScript (ES6+)</li>
-              <li class="skill-item">React</li>
-              <li class="skill-item">TypeScript</li>
-              <li class="skill-item">Sass</li>
-              <li class="skill-item">Vite</li>
-              <li class="skill-item">Node.js</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section id="contact" class="contact-section section-fade">
-        <p class="meta-title contact-meta">04 - CONTACT</p>
-        <div class="contact-grid-container">
-          <div class="contact-text-container">
-            <h2 class="section-header contact-header">Lets work together.</h2>
-            <p class="text-main">
-              Currently open to freelance projects. If you have something
-              interesting, I'd love to hear about it.
-            </p>
-          </div>
-          <div class="contact-details-container">
-            <div class="contact-item">
-              <h3 class="meta-title contact-header">EMAIL</h3>
-              <a
-                class="contact-details email-link"
-                href="mailto:jonmckenziewebdev@gmail.com"
-                >jonmckenziewebdev@gmail.com</a
-              >
+          <div class="project-item section-fade">
+            <div class="index-year">
+              <p class="index">06</p>
+              <p class="year">2026</p>
             </div>
-            <div class="contact-item">
-              <h3 class="meta-title contact-header">GITHUB</h3>
-              <a
-                href="https://github.com/jonmc89"
-                class="contact-details github-link"
-                target="_blank"
-                >github.com/jonmc89</a
-              >
+            <div class="project-screenshot stats-review"></div>
+            <h4 class="project-header">Stats Review Component</h4>
+            <p class="project-details">Front-End Mentor Challenge</p>
+            <div class="tech-stack-container">
+              <div class="tech-item">HTML</div>
+              <div class="tech-item">CSS</div>
+              <div class="tech-item">JavaScript</div>
             </div>
-          </div>
-          <form id="form" novalidate>
-            <label class="meta-title contact-header" for="name">NAME</label>
-            <input id="name" type="text" name="name" required />
-            <label class="meta-title contact-header" for="email">EMAIL</label>
-            <input id="email" type="email" name="email" required />
-            <label class="meta-title contact-header" for="message"
-              >MESSAGE</label
+            <a
+              class="project-item-link"
+              href="https://jonmc89.github.io/results-summary-component-main/"
+              target="_blank"
+              rel="noopener"
+              >View project →</a
             >
-            <textarea name="message" id="message" rows="8" required></textarea>
-            <input class="form-submit" type="submit" value="Send message" />
-          </form>
+          </div>
         </div>
       </section>
     </main>
