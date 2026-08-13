@@ -97,6 +97,10 @@ h1,
   color: var(--white);
 }
 
+.home {
+  color: var(--grey);
+}
+
 .logo {
   font-size: 1.5rem;
 }
@@ -348,7 +352,10 @@ header {
 
 .hire-me-link {
   display: none;
-  transition: opacity 0.2s ease-in-out;
+  transition:
+    color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+  border: 0.1rem solid var(--blue);
   border-radius: 0.5rem;
   background-color: var(--blue);
   padding: 0.5rem 1rem;
@@ -357,7 +364,8 @@ header {
 }
 
 .hire-me-link:hover {
-  opacity: 0.7;
+  background-color: var(--black);
+  color: var(--blue);
 }
 
 /* Hero Section */
@@ -635,6 +643,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   gap: 0.8rem;
   border-top: 0.1rem solid var(--dark-grey);
   padding: 1.2rem;
@@ -695,9 +704,14 @@ footer {
 }
 
 .privacy-link {
+  transition: color 0.2s ease-in-out;
   cursor: pointer;
-  color: var(--blue);
+  color: var(--white);
   text-decoration: none;
+}
+
+.privacy-link:hover {
+  color: var(--blue);
 }
 
 .social-link {
