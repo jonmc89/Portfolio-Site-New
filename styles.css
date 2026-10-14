@@ -259,7 +259,7 @@ header {
   align-items: center;
   z-index: 99;
   margin-inline: auto;
-  background-color: var(--black);
+  background-color: var(--darker-grey);
   padding: 1rem 2rem;
   width: min(100% - 2rem, 1440px);
 }
