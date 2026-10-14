@@ -321,7 +321,7 @@ header {
     opacity 0.25s ease-in-out,
     transform 0.25s ease-in-out;
   margin-block-end: 7rem;
-  background-color: var(--black);
+  background-color: var(--darker-grey);
   width: 100%;
   height: auto;
   pointer-events: none;
@@ -684,6 +684,7 @@ footer {
   flex-direction: column;
   gap: 3rem;
   padding: 8rem 1rem 4rem 1rem;
+  max-width: 300px;
 }
 
 .section-header {
@@ -706,7 +707,7 @@ footer {
   }
 
   p {
-    width: 50ch;
+    width: 30ch;
     line-height: 150%;
   }
 
@@ -714,10 +715,11 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding-left: 1rem;
+    list-style: none;
   }
 
   li {
+    width: 25ch;
     font-weight: 700;
   }
 
@@ -728,7 +730,7 @@ footer {
 
 .privacy-rights {
   li {
-    width: 40ch;
+    width: 35ch;
     font-weight: 400;
   }
 }
@@ -785,6 +787,12 @@ footer {
 
   .hire-me-link {
     display: block;
+  }
+
+  .privacy-item {
+    p {
+      width: 50ch;
+    }
   }
 }
 
