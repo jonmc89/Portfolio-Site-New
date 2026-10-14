@@ -52,7 +52,6 @@
       src="https://kit.fontawesome.com/d4691f768e.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="./script.js" defer></script>
     <title>JM | WebDev</title>
   </head>
@@ -335,7 +334,12 @@
               >
             </div>
           </div>
-          <form id="form" novalidate>
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            action="./success.html"
+          >
             <label class="meta-title contact-header" for="name">NAME</label>
             <input id="name" type="text" name="name" required />
             <label class="meta-title contact-header" for="email">EMAIL</label>
