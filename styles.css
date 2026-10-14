@@ -154,8 +154,15 @@ h1,
   letter-spacing: 0.2rem;
 }
 
-.project-item-link:hover,
+.all-projects-link {
+  color: var(--blue);
+}
+
 .all-projects-link:hover {
+  color: var(--white);
+}
+
+.project-item-link:hover {
   color: var(--blue);
 }
 
