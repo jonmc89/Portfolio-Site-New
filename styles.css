@@ -385,22 +385,15 @@ header {
   height: 100vh;
 }
 
-.hero-img-container {
-  position: relative;
-  margin-block-end: 1rem;
-  background-image: url(./images/hero-image.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-
 .hero-text-container {
   display: flex;
   flex-direction: column;
   gap: clamp(2rem, 5vh, 3rem);
   padding: 0 1.2rem 2.5rem 1.2rem;
+}
+
+.hero-img {
+  display: none;
 }
 
 .hero-call-to-action {
@@ -449,11 +442,28 @@ header {
   min-height: 100vh;
 }
 
+.about-text-one,
+.about-text-two {
+  margin-block-end: 1rem;
+}
+
+.about-image-wrapper {
+  display: flex;
+  grid-row: 2 / 4;
+  justify-content: center;
+  margin-block-end: 1rem;
+  img {
+    border-radius: 0.5rem;
+    width: auto;
+    height: 20rem;
+  }
+}
+
 .about-stats-container {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(2, 1fr);
-  background-color: var(--darker-grey);
+  background-color: var(--dark-grey);
   padding: 1rem;
 }
 
@@ -467,7 +477,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 0 1.2rem;
+  padding: 5rem 0 1.2rem 0;
   height: 100%;
 }
 
@@ -487,7 +497,7 @@ header {
   flex-direction: column;
   gap: 1.2rem;
   border-radius: 1rem;
-  background-color: var(--darker-grey);
+  background-color: var(--dark-grey);
   padding: 1.5rem;
 }
 
@@ -502,31 +512,31 @@ header {
 }
 
 .ec-solutions {
-  background-image: url(./images/ec-solutions-screenshot.png);
+  background-image: url(./images/ec-solutions-screenshot.webp);
 }
 
 .design-profile {
-  background-image: url(./images/single-page-design-portfolio.png);
+  background-image: url(./images/single-page-design-portfolio.webp);
 }
 
 .hotel-booking {
-  background-image: url(./images/hotel-booking-page.png);
+  background-image: url(./images/hotel-booking-page.webp);
 }
 
 .scoot-homepage {
-  background-image: url(./images/scoot-screenshot.png);
+  background-image: url(./images/scoot-screenshot.webp);
 }
 
 .meet-homepage {
-  background-image: url(./images/meet-landing-screenshot.png);
+  background-image: url(./images/meet-landing-screenshot.webp);
 }
 
 .sign-up-homepage {
-  background-image: url(./images/sign-up-screenshot.png);
+  background-image: url(./images/sign-up-screenshot.webp);
 }
 
 .stats-review {
-  background-image: url(./images/stats-component-screenshot.png);
+  background-image: url(./images/stats-component-screenshot.webp);
 }
 
 .index-year {
@@ -780,6 +790,25 @@ footer {
     display: none;
   }
 
+  .hero-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .about-text-one,
+  .about-text-two {
+    margin-block-end: 1rem;
+  }
+
+  .about-image-wrapper {
+    img {
+      margin-block-end: 1rem;
+      width: auto;
+      height: 40rem;
+    }
+  }
+
   .header-nav {
     display: flex;
   }
@@ -807,11 +836,11 @@ footer {
     padding: 8rem 10rem 0 10rem;
   }
   .hero-section {
-    display: grid;
+    display: flex;
     position: relative;
-    grid-template-rows: 1fr;
-    grid-template-columns: 40% 60%;
-    justify-content: center;
+    flex-direction: row-reverse;
+
+    justify-content: space-between;
     align-items: center;
     gap: 4rem;
   }
@@ -820,15 +849,18 @@ footer {
     grid-row: 1;
   }
 
-  .hero-img-container {
+  .hero-img {
     grid-column: 2;
-    width: 100%;
+    margin-block-end: 1rem;
+    border-radius: 0.5rem;
+    width: auto;
+    height: 38rem;
   }
 
   .about-section {
     display: flex;
     justify-content: center;
-    padding: 0 10rem;
+    padding: 5rem 10rem 0 10rem;
   }
 
   .about-grid-container {
@@ -839,10 +871,29 @@ footer {
     height: auto;
   }
 
+  .about-text-one {
+    align-self: self-end;
+  }
+
   .about-text-one,
   .about-text-two,
   .about-stats-container {
     grid-column: 2;
+  }
+
+  .about-text-one,
+  .about-text-two {
+    margin-block-end: 0rem;
+  }
+
+  .about-image-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    img {
+      margin-block-end: 1rem;
+      width: auto;
+      height: 20rem;
+    }
   }
 
   .about-meta {
