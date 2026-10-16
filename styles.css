@@ -227,6 +227,11 @@ h1 {
 
 /* Main Styles */
 
+.hidden {
+  position: absolute;
+  transform: translateX(-200rem);
+}
+
 html {
   scroll-behavior: smooth;
 }

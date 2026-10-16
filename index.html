@@ -346,7 +346,14 @@
             method="POST"
             data-netlify="true"
             action="./success.html"
+            netlify-honeypot="bot-field"
           >
+            <p class="hidden">
+              <label>
+                Don’t fill this out if you’re human:
+                <input name="bot-field" type="text" />
+              </label>
+            </p>
             <label class="meta-title contact-header" for="name">NAME</label>
             <input id="name" type="text" name="name" required />
             <label class="meta-title contact-header" for="email">EMAIL</label>
