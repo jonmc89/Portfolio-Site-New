@@ -10,24 +10,6 @@ menuBtn.addEventListener('click', () => {
   menuBtn.classList.toggle('highlighted');
 });
 
-// Section Fade
-
-const observer = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.1 },
-);
-
-document.querySelectorAll('.section-fade').forEach((section) => {
-  observer.observe(section);
-});
-
 // Nav Indicator
 
 function moveIndicator(item) {
@@ -43,7 +25,6 @@ moveIndicator(activeItem);
 items.forEach((item) => {
   item.addEventListener('click', () => {
     document.querySelector('.header-link.active')?.classList.remove('active');
-
     item.classList.add('active');
     moveIndicator(item);
   });
