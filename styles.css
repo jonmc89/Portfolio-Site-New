@@ -820,7 +820,7 @@ footer {
   }
 
   .hero-img {
-    display: block;
+    display: none;
     width: 100%;
     height: auto;
   }
@@ -868,7 +868,6 @@ footer {
     display: flex;
     position: relative;
     flex-direction: row-reverse;
-
     justify-content: space-between;
     align-items: center;
     gap: 4rem;
@@ -879,6 +878,7 @@ footer {
   }
 
   .hero-img {
+    display: block;
     grid-column: 2;
     margin-block-end: 1rem;
     border-radius: 0.5rem;
