@@ -418,7 +418,9 @@ header {
 }
 
 .hero-img {
-  display: none;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .hero-call-to-action {
@@ -814,13 +816,13 @@ footer {
 
 /* || Media Queries */
 
-@media screen and (min-width: 51.25rem) {
+@media screen and (min-width: 768px) and (orientation: portrait) {
   #menuBtn {
     display: none;
   }
 
   .hero-img {
-    display: none;
+    display: block;
     width: 100%;
     height: auto;
   }
@@ -850,6 +852,14 @@ footer {
     p {
       width: 50ch;
     }
+  }
+}
+
+@media screen and (min-width: 57.5625rem) {
+  .hero-section {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 8rem 0;
   }
 }
 
