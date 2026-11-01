@@ -817,7 +817,7 @@ footer {
 /* || Media Queries */
 
 @media screen and (min-width: 768px) and (orientation: portrait) {
-  #menuBtn {
+  ç {
     display: none;
   }
 
@@ -856,6 +856,14 @@ footer {
 }
 
 @media screen and (min-width: 57.5625rem) {
+  #menuBtn {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+  }
+
   .hero-section {
     flex-direction: row-reverse;
     align-items: center;
