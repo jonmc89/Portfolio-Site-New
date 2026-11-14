@@ -817,7 +817,7 @@ footer {
 /* || Media Queries */
 
 @media screen and (min-width: 768px) and (orientation: portrait) {
-  ç {
+  #menuBtn {
     display: none;
   }
 
@@ -1025,6 +1025,10 @@ footer {
 
   .privacy-section {
     align-items: center;
+  }
+
+  .privacy-item p {
+    width: 37.5rem;
   }
 }
 
